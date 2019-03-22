@@ -184,19 +184,19 @@ a:hover {
 	box-shadow: none !important;
 }
 
-.site-section {
+.mysite-section {
 	/*padding: 3em 0;*/
 	padding-left:20%;
 }
 
 @media ( min-width : 768px) {
-	.site-section {
+	.mysite-section {
 		/*padding: 7em 0;*/
 		padding-left:20%;
 	}
 }
 
-.site-section.site-section-sm {
+.mysite-section.site-section-sm {
 	/*padding: 4em 0;*/
 	/*padding-top: 100px;*/
 	padding-left:20%;
