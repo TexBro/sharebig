@@ -184,15 +184,53 @@
 						<h3 class="h4 text-black widget-title mb-3">Contact Agent</h3>
 						<form action="" class="form-contact-agent">
 							<div class="form-group">
-								<label for="name">Name</label> <input type="text" id="name"
-									class="form-control">
+								<label for="name">Name</label> 
+								<div class="input-append date form_datetime1"
+								data-date="2019-02-21T15:25:00Z">
+
+								<input size="20" type="text" value="" readonly
+									style="width: 80%;"> <span class="add-on"><i
+									class="icon-remove"></i></span> <span class="add-on"><i
+									class="icon-calendar"></i></span>
+							</div>
+
+							<script type="text/javascript">
+								$(".form_datetime1").datetimepicker({
+									format : "yyyy-mm-dd - hh:ii",
+									autoclose : true,
+									todayBtn : true,
+									startDate : "2013-02-14 10:00",
+									minuteStep : 30
+								});
+							</script>
 							</div>
 							<div class="form-group">
-								<label for="email">Email</label> <input type="email" id="email"
-									class="form-control">
+								<label for="email">Email</label> 
+											<label for="offer-types">Offer Type</label>
+
+							<div class="input-append date form_datetime2"
+								data-date="2019-02-21T15:25:00Z">
+
+								<input size="20" type="text" value="" readonly
+									style="width: 80%;"> <span class="add-on"><i
+									class="icon-remove"></i></span> <span class="add-on"><i
+									class="icon-calendar"></i></span>
+							</div>
+
+							<script type="text/javascript">
+								$(".form_datetime2").datetimepicker({
+									format : "yyyy-mm-dd - hh:ii",
+									autoclose : true,
+									todayBtn : true,
+									startDate : "2013-02-14 10:00",
+									minuteStep : 30
+								});
+							</script>
+
 							</div>
 							<div class="form-group">
-								<label for="phone">Phone</label> <input type="text" id="phone"
+								<label for="phone">Phone</label> 
+								<input type="text" id="phone"
 									class="form-control">
 							</div>
 							<div class="form-group">
@@ -316,7 +354,6 @@
 								<li><span class="property-specs">SQ FT</span> <span
 									class="property-specs-number">5,500</span></li>
 							</ul>
-
 						</div>
 					</div>
 				</div>
