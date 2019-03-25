@@ -1,18 +1,16 @@
 
 	<div class="site-section site-section-sm bg-light">
 		<div class="container">
-
-
 			<div class="row mb-4">
 				<div class="col-md-12">
 					<div class="property-entry horizontal d-lg-flex">
-						<a href="property-details.html" class="property-thumbnail h-100">
+						<a href="property-details.html" class="property-thumbnail">
 							<div class="offer-type-wrap">
 								<span class="offer-type bg-danger">Sale</span> <span
 									class="offer-type bg-success">Rent</span>
 							</div> <img src="images/img_2.jpg" alt="Image" class="img-fluid">
 						</a>
-						<div class="p-4 property-body">
+						<div class="property-body">
 							<a href="#" class="property-favorite"><span
 								class="icon-heart-o"></span></a>
 							<h2 class="property-title">
@@ -33,7 +31,7 @@
 								<li><span class="property-specs">SQ FT</span> <span
 									class="property-specs-number">5,500</span></li>
 							</ul>
-							<button style="float: right;">예약하기</button>
+							<button style="float: right;">등록하기</button>
 						</div>
 					</div>
 				</div>
@@ -50,7 +48,7 @@
 							</div> <img src="images/img_3.jpg" alt="Image" class="img-fluid">
 						</a>
 
-						<div class="p-4 property-body">
+						<div class="  property-body">
 							<a href="#" class="property-favorite active"><span
 								class="icon-heart-o"></span></a>
 							<h2 class="property-title">
@@ -88,7 +86,7 @@
 							</div> <img src="images/img_4.jpg" alt="Image" class="img-fluid">
 						</a>
 
-						<div class="p-4 property-body">
+						<div class="  property-body">
 							<a href="#" class="property-favorite"><span
 								class="icon-heart-o"></span></a>
 							<h2 class="property-title">
@@ -125,7 +123,7 @@
 							</div> <img src="images/img_5.jpg" alt="Image" class="img-fluid">
 						</a>
 
-						<div class="p-4 property-body">
+						<div class="  property-body">
 							<a href="#" class="property-favorite"><span
 								class="icon-heart-o"></span></a>
 							<h2 class="property-title">
@@ -162,7 +160,7 @@
 							</div> <img src="images/img_1.jpg" alt="Image" class="img-fluid">
 						</a>
 
-						<div class="p-4 property-body">
+						<div class="  property-body">
 							<a href="#" class="property-favorite"><span
 								class="icon-heart-o"></span></a>
 							<h2 class="property-title">
@@ -188,16 +186,5 @@
 					</div>
 				</div>
 			</div>
-
-
-			<div class="row mt-5">
-				<div class="col-md-12 text-center">
-					<div class="site-pagination">
-						<a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a>
-						<a href="#">4</a> <a href="#">5</a> <span>...</span> <a href="#">10</a>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</div>

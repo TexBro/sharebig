@@ -3,10 +3,10 @@
 <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
 <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/newstyle.css">
 <link rel="stylesheet" href="fonts/icomoon/style.css">
 <link rel="stylesheet" href="css/mypage.css">
 <link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/newstyle.css">
 
 
 

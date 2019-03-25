@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 big-margin" style="margin: auto" >
