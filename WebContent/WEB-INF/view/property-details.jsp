@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,14 +8,15 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<%@ include file="../include/header.jsp" %>
+<%@ include file="../include/header.jsp"%>
 
 </head>
-<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0" class="">
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0"
+	class="">
 
 
-	<%@ include file="../include/menubar.jsp" %>
-	
+	<%@ include file="../include/menubar.jsp"%>
+
 	<div class="site-section site-section-sm">
 		<div class="container">
 			<div class="row">
@@ -23,8 +24,7 @@
 					<div
 						class="bg-white property-body border-top border-bottom border-left border-right">
 						<div class="row mb-5">
-							<img src="images/hero_bg_2.jpg"
-								class ="property-main-picture">
+							<img src="images/hero_bg_2.jpg" class="property-main-picture">
 						</div>
 						<div class="row mb-5">
 							<div class="col-md-6">
@@ -184,17 +184,17 @@
 						<h3 class="h4 text-black widget-title mb-3">Contact Agent</h3>
 						<form action="" class="form-contact-agent">
 							<div class="form-group">
-								<label for="name">Name</label> 
+								<label for="name">Name</label>
 								<div class="input-append date form_datetime1"
-								data-date="2019-02-21T15:25:00Z">
+									data-date="2019-02-21T15:25:00Z">
 
-								<input size="20" type="text" value="" readonly
-									style="width: 80%;"> <span class="add-on"><i
-									class="icon-remove"></i></span> <span class="add-on"><i
-									class="icon-calendar"></i></span>
-							</div>
+									<input size="20" type="text" value="" readonly
+										style="width: 80%;"> <span class="add-on"><i
+										class="icon-remove"></i></span> <span class="add-on"><i
+										class="icon-calendar"></i></span>
+								</div>
 
-							<script type="text/javascript">
+								<script type="text/javascript">
 								$(".form_datetime1").datetimepicker({
 									format : "yyyy-mm-dd - hh:ii",
 									autoclose : true,
@@ -205,19 +205,19 @@
 							</script>
 							</div>
 							<div class="form-group">
-								<label for="email">Email</label> 
-											<label for="offer-types">Offer Type</label>
+								<label for="email">Email</label> <label for="offer-types">Offer
+									Type</label>
 
-							<div class="input-append date form_datetime2"
-								data-date="2019-02-21T15:25:00Z">
+								<div class="input-append date form_datetime2"
+									data-date="2019-02-21T15:25:00Z">
 
-								<input size="20" type="text" value="" readonly
-									style="width: 80%;"> <span class="add-on"><i
-									class="icon-remove"></i></span> <span class="add-on"><i
-									class="icon-calendar"></i></span>
-							</div>
+									<input size="20" type="text" value="" readonly
+										style="width: 80%;"> <span class="add-on"><i
+										class="icon-remove"></i></span> <span class="add-on"><i
+										class="icon-calendar"></i></span>
+								</div>
 
-							<script type="text/javascript">
+								<script type="text/javascript">
 								$(".form_datetime2").datetimepicker({
 									format : "yyyy-mm-dd - hh:ii",
 									autoclose : true,
@@ -229,8 +229,7 @@
 
 							</div>
 							<div class="form-group">
-								<label for="phone">Phone</label> 
-								<input type="text" id="phone"
+								<label for="phone">Phone</label> <input type="text" id="phone"
 									class="form-control">
 							</div>
 							<div class="form-group">
@@ -359,11 +358,11 @@
 				</div>
 			</div>
 		</div>
-		<%@include file="../include/footer.jsp" %>
+		<%@include file="../include/footer.jsp"%>
 
 	</div>
 
-<%@ include file="../include/footer.jsp" %>
+	<%@ include file="../include/footer.jsp"%>
 
 </body>
 </html>

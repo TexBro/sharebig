@@ -12,7 +12,6 @@ body {
 		"Noto Color Emoji";
 }
 
-
 ::-moz-selection {
 	background: #000;
 	color: #fff;
@@ -22,25 +21,24 @@ body {
 	background: #000;
 	color: #fff;
 }
-.menu-search{
-	width:40%;
-	min-width:300px;
+
+.menu-search {
+	width: 40%;
+	min-width: 300px;
 }
 
-
-.menu-date{
-	padding:0px;
-	width:20%;
+.menu-date {
+	padding: 0px;
+	width: 20%;
 	min-width: 260px;
-	height:68px;
-	
+	height: 68px;
 }
-.menu-search-btn{
+
+.menu-search-btn {
 	flex: 20%;
-	
-	margin-top:20px;
+	margin-top: 20px;
 }
-	
+
 a {
 	-webkit-transition: .3s all ease;
 	-o-transition: .3s all ease;
@@ -185,17 +183,20 @@ a:hover {
 
 .site-section {
 	/*padding: 3em 0;*/
+	
 }
 
 @media ( min-width : 768px) {
 	.site-section {
 		/*padding: 7em 0;*/
+		
 	}
 }
 
 .site-section.site-section-sm {
 	/*padding: 4em 0;*/
 	/*padding-top: 100px;*/
+	
 }
 
 .bg-text-line {
@@ -394,8 +395,6 @@ a:hover {
 }
 
 /* Navbar */
-
-
 .site-navbar {
 	margin-bottom: 0px;
 	width: 100%;
@@ -403,6 +402,7 @@ a:hover {
 	position: relative;
 	z-index: 99;
 }
+
 .site-navbar-top .site-logo {
 	font-size: 2rem;
 }
@@ -420,7 +420,6 @@ a:hover {
 .site-navbar-wrap .site-navbar-top {
 	font-size: 0.8rem;
 }
-
 
 .site-navbar .site-logo {
 	font-weight: 200;
@@ -941,7 +940,6 @@ a:hover {
 
 .property-entry {
 	/*height:250px;*/
-	
 	-webkit-box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.1);
 	background: #fff;
@@ -1004,7 +1002,7 @@ a:hover {
 }
 
 .property-entry .property-thumbnail img {
-	max-height:250px;
+	max-height: 250px;
 	-webkit-transition: .3s all ease;
 	-o-transition: .3s all ease;
 	transition: .3s all ease;
@@ -1137,6 +1135,7 @@ a:hover {
 
 .form-search .btn[type="submit"] {
 	/*height: 47px;*/
+	
 }
 
 .select-wrap {
@@ -1454,7 +1453,7 @@ a:hover {
 	opacity: .5;
 }
 
-.property-main-picture{
-	width:100%;
-	height:100%;
+.property-main-picture {
+	width: 100%;
+	height: 100%;
 }

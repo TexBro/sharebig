@@ -1,11 +1,20 @@
 package model.DO;
 
 public class MemberDO {
+
+	private String member_no;
 	private String id;
 	private String pw;
 	private String hp;
 	private String email;
 	private int dept_no;
+
+	public String getMember_no() {
+		return member_no;
+	}
+	public void setMember_no(String member_no) {
+		this.member_no = member_no;
+	}
 	
 	public String getId() {
 		return id;

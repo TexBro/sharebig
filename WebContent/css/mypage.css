@@ -1,31 +1,33 @@
 /* Base */
-
-
-.mypage-row{
+.mypage-row {
 	max-height: 200px;
-    width: 100%;
-    overflow: -webkit-paged-x;
+	width: 100%;
+	overflow: -webkit-paged-x;
 }
+
 .sidenav {
 	height: 100%;
 	background-color: #23a920;
 	overflow-x: hidden;
 	padding-top: 20px;
 }
-.sidenav .mypage-name{
-	 text-align: center;
 
-};
+.sidenav .mypage-name {
+	text-align: center;
+}
 
+;
 .mysite-section {
 	/*padding: 3em 0;*/
 	/*padding-left:20%;*/
+	
 }
 
 @media ( min-width : 768px) {
 	.mysite-section {
 		/*padding: 7em 0;*/
 		/*padding-left:20%;*/
+		
 	}
 }
 
@@ -33,6 +35,7 @@
 	/*padding: 4em 0;*/
 	/*padding-top: 100px;*/
 	/*padding-left:20%;*/
+	
 }
 /*
 body {
@@ -821,7 +824,7 @@ a:hover {
 	padding-left: 60px;
 }
 */
-/* Blocks *//*
+/* Blocks */ /*
 .site-blocks-cover {
 	background-size: cover;
 	background-repeat: no-repeat;

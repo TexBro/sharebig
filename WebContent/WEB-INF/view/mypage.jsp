@@ -12,9 +12,11 @@
 	class="">
 	<%@ include file="../include/menubar.jsp"%>
 
-	<div class="mysite-section" style="margin: 30px;text-align: -webkit-center;">
+	<div class="mysite-section"
+		style="margin: 30px; text-align: -webkit-center;">
 		<div class="col-md-10 row">
-			<div class="col-md-3 " style="height: 250px; background-color: green;">
+			<div class="col-md-3 "
+				style="height: 250px; background-color: green;">
 				<div class="mypage-name">
 					<h1>OOO 님</h1>
 					<p>Login or register from here to access.</p>

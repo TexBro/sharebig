@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,17 +26,19 @@
 	<div class="main">
 		<div class="col-md-6 col-sm-12">
 			<div class="login-form">
-				<form>
+				<form action="login_controller.jsp" method ="POST">
 					<div class="form-group">
-						<label>User Name</label> <input type="text" class="form-control"
-							placeholder="User Name">
+						<label>User Name</label> 
+						<input type="text" class="form-control"
+							name="userid">
 					</div>
 					<div class="form-group">
-						<label>Password</label> <input type="password"
-							class="form-control" placeholder="Password">
+						<label>Password</label> 
+						<input type="password"
+							class="form-control" name="passwd">
 					</div>
-					<button type="submit" class="btn btn-black">Login</button>
-					<button type="submit" class="btn btn-secondary" onclick="javascript:location.href='register.jsp'">Register</button>
+					<button type="submit" class="btn btn-black" value="login" name="command">Login</button>
+					<button type="submit" class="btn btn-secondary" value="signup" name="command">Register</button>
 
 				</form>
 

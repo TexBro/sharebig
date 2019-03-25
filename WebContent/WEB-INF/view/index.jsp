@@ -1,22 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<%@ include file="../include/header.jsp" %>
+<%@ include file="../include/header.jsp"%>
 
 </head>
-<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0" class="">
-<%@ include file="../include/menubar.jsp" %>
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0"
+	class="">
+	<%@ include file="../include/menubar.jsp"%>
 
-<%@ include file="../include/searchbar.jsp" %>
+	<%@ include file="../include/searchbar.jsp"%>
 
-<%@ include file="../include/mainview.jsp" %>
+	<%@ include file="../include/mainview.jsp"%>
 
-<%@ include file="../include/footer.jsp" %>
+	<%@ include file="../include/footer.jsp"%>
 
 </body>
 </html>

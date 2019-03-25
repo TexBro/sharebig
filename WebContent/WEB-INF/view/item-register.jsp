@@ -25,8 +25,8 @@
 
 </head>
 <body>
-		<%@ include file="../include/menubar.jsp"%>
-	
+	<%@ include file="../include/menubar.jsp"%>
+
 	<div class="container">
 
 		<div class="row">

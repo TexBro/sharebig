@@ -1,2 +1,2 @@
 
-<jsp:forward page="WEB-INF/view/index-list.jsp"/>
+<jsp:forward page="WEB-INF/view/index-list.jsp" />

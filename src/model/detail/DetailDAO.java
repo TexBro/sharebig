@@ -1,5 +1,6 @@
 package model.detail;
 
-public class DetailDAO {
 
+public class DetailDAO {
+	
 }
