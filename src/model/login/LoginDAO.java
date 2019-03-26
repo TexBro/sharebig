@@ -23,57 +23,10 @@ public class LoginDAO {
 		}
 	}
 
-	public void setAutoCommit(boolean commit) {
-		try {
-			this.conn = ds.getConnection();
-			// dbcp에 있는 여러 연결 중 하나를 빌려오는 것
-			this.conn.setAutoCommit(commit);
-		} catch (Exception e) {
-			System.out.println(e);
-		} finally {
-			try {
-				this.conn.close();
-			} catch (Exception e2) {
-				System.out.println(e2);
-			}
-		}
-	}
-
-	public void commit() {
-		try {
-			this.conn = ds.getConnection();
-			conn.commit();
-		} catch (Exception e) {
-			System.out.println(e);
-		} finally {
-			try {
-				this.conn.close();
-			} catch (Exception e2) {
-				System.out.println(e2);
-			}
-		}
-	}
-
-	public void rollback() {
-		try {
-			this.conn = ds.getConnection();
-			conn.rollback();
-		} catch (Exception e) {
-			System.out.println(e);
-		} finally {
-			try {
-				this.conn.close();
-			} catch (Exception e2) {
-				System.out.println(e2);
-			}
-		}
-	}
-
 	public int selectUser(LoginDO loginDO) {
 		int count = 0;
-
 		try {
-			String sql = "select id,passwd from member where id = ? and passwd = ? ";
+			String sql = "select id,passwd from member where id = ? and passwd = ?";
 
 			this.conn = ds.getConnection();
 			pstmt = conn.prepareStatement(sql);
@@ -90,9 +43,7 @@ public class LoginDAO {
 			} catch (Exception e) {
 				System.out.println(e);
 			}
-
 		}
-
 		return count;
 	}
 /*

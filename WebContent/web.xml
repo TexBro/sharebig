@@ -26,19 +26,16 @@
   <description>
      Welcome to myJSP
   </description>
-  
-  <servlet>
-	<servlet-name>jsp</servlet-name>
-	<servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
-	  <init-param>
-	    <param-name>workspace</param-name>
-		<param-value>C:\Java\webproject</param-value>
-	  </init-param>
+
+	<servlet>
+		<servlet-name>jsp</servlet-name>
+		<servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
 	</servlet>
+
 	<servlet-mapping>
-	  <servlet-name>jsp</servlet-name>
-	  <url-pattern>*.jsp</url-pattern>
-  </servlet-mapping>
+		<servlet-name>jsp</servlet-name>
+		<url-pattern>*.jsp</url-pattern>
+	</servlet-mapping>
   
   <context-param>
   	<param-name>adminID</param-name>

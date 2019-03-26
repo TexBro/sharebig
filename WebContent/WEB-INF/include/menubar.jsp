@@ -17,7 +17,7 @@
 				<div class="col-10 col-md-10 col-lg-6">
 					<img alt="" src="images/dbinc_ci.png" style="float: left;">
 					<h1>
-						<a href="index.jsp" class="text-black h2 mb-0"
+						<a href="main_controller.jsp" class="text-black h2 mb-0"
 							style="float: left; padding-top: 35px; padding-left: 10px;"><strong>ShareBig<span
 								class="text-danger">.</span></strong></a>
 					</h1>
@@ -28,15 +28,17 @@
 						role="navigation">
 
 						<div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-							<a href="#" class="site-menu-t	oggle js-menu-toggle"><span
+							<a href="main_controller.jsp?command=list" class="site-menu-t	oggle js-menu-toggle"><span
 								class="icon-menu h3"></span></a>
 						</div>
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block">
-							<li class="active"><a href="index.jsp">Home</a></li>
-							<li><a href="buy.html">Buy</a></li>
-							<li><a href="rent.html">Rent</a></li>
-							<li class="has-children"><a href="properties.html">Properties</a>
+							<li class="active">
+							<a href="main_controller.jsp?command=list">Home</a>
+							</li>
+							<li><a href="main_controller.jsp?command=sell">Buy</a></li>
+							<li><a href="main_controller.jsp?command=rent">Rent</a></li>
+							<li class="has-children"><a href="main_controller.jsp?command=rent">카테고리</a>
 								<ul class="dropdown arrow-top">
 									<li><a href="#">Condo</a></li>
 									<li><a href="#">Property Land</a></li>
@@ -48,7 +50,14 @@
 											<li><a href="#">Menu Three</a></li>
 										</ul></li>
 								</ul></li>
-							<li><a href="contact.html">Contact</a></li>
+								
+							<li><a href="main_controller.jsp?command=regist">Regist</a></li>
+							<li><a href="main_controller.jsp?command=mypage">My Page</a></li>
+							<li><a href="main_controller.jsp?command=logout">
+									<img src="images/logout.png" style="height: 25px; ">
+								</a>
+							</li>
+							
 						</ul>
 					</nav>
 				</div>

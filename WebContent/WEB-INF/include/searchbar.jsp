@@ -74,16 +74,17 @@
 				<div
 					class="view-options bg-white py-3 px-3 d-md-flex align-items-center">
 					<div class="mr-auto">
-						<a href="index.jsp" class="icon-view view-module active"><span
-							class="icon-view_module"></span></a> <a href="index-list.jsp"
+						<a href="main_controller.jsp" class="icon-view view-module active"><span
+							class="icon-view_module"></span></a> 
+						<a href="main_controller.jsp?command=list"
 							class="icon-view view-list"><span class="icon-view_list"></span></a>
 
 					</div>
 					<div class="ml-auto d-flex align-items-center">
 						<div>
-							<a href="#" class="view-list px-3 border-right active">All</a> <a
-								href="#" class="view-list px-3 border-right">Rent</a> <a
-								href="#" class="view-list px-3">Sale</a>
+							<a href="main_controller.jsp" class="view-list px-3 border-right active">All</a> <a
+								href="main_controller.jsp?command=rent" class="view-list px-3 border-right">Rent</a> <a
+								href="main_controller.jsp?command=buy" class="view-list px-3">Sale</a>
 						</div>
 
 
