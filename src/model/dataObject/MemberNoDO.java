@@ -1,4 +1,4 @@
-package model.DO;
+package model.dataObject;
 
 public class MemberNoDO {
 	private int member_no;

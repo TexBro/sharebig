@@ -1,3 +1,6 @@
+<%@page import="model.dataObject.ItemDO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="model.dataObject.MemberDO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,15 +14,19 @@
 <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0"
 	class="">
 	<%@ include file="../include/menubar.jsp"%>
-
+	<%
+		MemberDO user = (MemberDO)session.getAttribute("member"); 
+		ArrayList<ItemDO> salelist=(ArrayList<ItemDO>)session.getAttribute("salelist")
+	%>
 	<div class="mysite-section"
 		style="margin: 30px; text-align: -webkit-center;">
 		<div class="col-md-10 row">
 			<div class="col-md-3 "
 				style="height: 250px; background-color: green; padding: 20px;">
 				<div class="mypage-name">
-					<h1>OOO 님</h1>
-					<p>한글한글</p>
+					<h1><%=user.getMember_name() %></h1>
+					<p><%=user.getEmail()%></p>
+					<p><%=user.getHp()%></p>
 				</div>
 			</div>
 			<div class="col-md-9" style="">
@@ -71,8 +78,6 @@
 	</div>
 
 	<%@ include file="../include/listview.jsp"%>
-
-	<%@ include file="../include/pagination.jsp"%>
 
 	<%@ include file="../include/footer.jsp"%>
 </body>

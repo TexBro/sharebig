@@ -1,4 +1,4 @@
-package model.DO;
+package model.dataObject;
 
 import java.sql.Date;
 

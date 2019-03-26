@@ -24,106 +24,72 @@
 					<div
 						class="bg-white property-body border-top border-bottom border-left border-right">
 						<div class="row mb-5">
-							<img src="images/hero_bg_2.jpg" class="property-main-picture">
+							<img src="images/1001_1.png" class="property-main-picture">
 						</div>
+						<h1>[에어렉스] 특가에어렉스 제습기 ADH-2000 최대200L/일</h1>
+						
 						<div class="row mb-5">
 							<div class="col-md-6">
-								<strong class="text-success h1 mb-3">$1,000,500</strong>
-							</div>
-							<div class="col-md-6">
-								<ul class="property-specs-wrap mb-3 mb-lg-0  float-lg-right">
-									<li><span class="property-specs">Beds</span> <span
-										class="property-specs-number">2 <sup>+</sup></span></li>
-									<li><span class="property-specs">Baths</span> <span
-										class="property-specs-number">2</span></li>
-									<li><span class="property-specs">SQ FT</span> <span
-										class="property-specs-number">7,000</span></li>
-								</ul>
+								<strong class="text-success h1 mb-3">220,000원</strong>
 							</div>
 						</div>
 						<div class="row mb-5">
 							<div
 								class="col-md-6 col-lg-4 text-center border-bottom border-top py-3">
-								<span class="d-inline-block text-black mb-0 caption-text">Home
-									Type</span> <strong class="d-block">Condo</strong>
+								<span class="d-inline-block text-black mb-0 caption-text"></span> <strong class="d-block">대여</strong>
 							</div>
 							<div
 								class="col-md-6 col-lg-4 text-center border-bottom border-top py-3">
-								<span class="d-inline-block text-black mb-0 caption-text">Year
-									Built</span> <strong class="d-block">2018</strong>
+								<span class="d-inline-block text-black mb-0 caption-text">제조일</span> <strong class="d-block">2018</strong>
 							</div>
 							<div
 								class="col-md-6 col-lg-4 text-center border-bottom border-top py-3">
-								<span class="d-inline-block text-black mb-0 caption-text">Price/Sqft</span>
-								<strong class="d-block">$520</strong>
+								<span class="d-inline-block text-black mb-0 caption-text"></span>
+								<strong class="d-block"></strong>
 							</div>
 						</div>
 						<h2 class="h4 text-black">More Info</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Assumenda aperiam perferendis deleniti vitae asperiores accusamus
-							tempora facilis sapiente, quas! Quos asperiores alias fugiat sunt
-							tempora molestias quo deserunt similique sequi.</p>
-						<p>Nisi voluptatum error ipsum repudiandae, autem deleniti,
-							velit dolorem enim quaerat rerum incidunt sed, qui ducimus!
-							Tempora architecto non, eligendi vitae dolorem laudantium dolore
-							blanditiis assumenda in eos hic unde.</p>
-						<p>Voluptatum debitis cupiditate vero tempora error fugit
-							aspernatur sint veniam laboriosam eaque eum, et hic odio
-							quibusdam molestias corporis dicta! Beatae id magni, laudantium
-							nulla iure ea sunt aliquam. A.</p>
+						<p>1. 강력제습 & 저소음 실현<br>
+2. 편리한 디지털 컨트롤러 채택<br>
+3. 대용량 자동배수펌프 내장<br>
+4. 자동 성에제거<br>
+5. 최적의 자동 습도조절 기능 <br>
+6. 편리하고 견고한 이동장치 <br>
+						</p>
 
 						<div class="row no-gutters mt-5">
 							<div class="col-12">
 								<h2 class="h4 text-black mb-3">Gallery</h2>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_1.jpg" class="image-popup gal-item"><img
-									src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+								<a href="images/1001_1.png" class="image-popup gal-item"><img
+									src="images/1001_1.png" alt="Image" class="img-fluid"></a>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_2.jpg" class="image-popup gal-item"><img
-									src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+								<a href="images/1002_1.png" class="image-popup gal-item"><img
+									src="images/1002_1.png" alt="Image" class="img-fluid"></a>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_3.jpg" class="image-popup gal-item"><img
-									src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+								<a href="images/1003_1.png" class="image-popup gal-item"><img
+									src="images/1003_1.png" alt="Image" class="img-fluid"></a>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_4.jpg" class="image-popup gal-item"><img
-									src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
+								<a href="images/1004_1.png" class="image-popup gal-item"><img
+									src="images/1004_1.png" alt="Image" class="img-fluid"></a>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_5.jpg" class="image-popup gal-item"><img
-									src="images/img_5.jpg" alt="Image" class="img-fluid"></a>
+								<a href="images/1005_1.png" class="image-popup gal-item"><img
+									src="images/1005_1.png" alt="Image" class="img-fluid"></a>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_6.jpg" class="image-popup gal-item"><img
-									src="images/img_6.jpg" alt="Image" class="img-fluid"></a>
+								<a href="images/1006_1.png" class="image-popup gal-item"><img
+									src="images/1006_1.png" alt="Image" class="img-fluid"></a>
 							</div>
 							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_7.jpg" class="image-popup gal-item"><img
-									src="images/img_7.jpg" alt="Image" class="img-fluid"></a>
+								<a href="images/1007_1.png" class="image-popup gal-item"><img
+									src="images/1007_1.png" alt="Image" class="img-fluid"></a>
 							</div>
-							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_8.jpg" class="image-popup gal-item"><img
-									src="images/img_8.jpg" alt="Image" class="img-fluid"></a>
-							</div>
-							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_1.jpg" class="image-popup gal-item"><img
-									src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-							</div>
-							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_2.jpg" class="image-popup gal-item"><img
-									src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-							</div>
-							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_3.jpg" class="image-popup gal-item"><img
-									src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-							</div>
-							<div class="col-sm-6 col-md-4 col-lg-3">
-								<a href="images/img_4.jpg" class="image-popup gal-item"><img
-									src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-							</div>
+						
 						</div>
 						<br>
 						<h2 class="h4 text-black mb-3">Commnets</h2>

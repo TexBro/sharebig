@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
 <div class="site-section site-section-sm bg-light">
 	<div class="container">
@@ -8,7 +10,7 @@
 						<div class="offer-type-wrap">
 							<span class="offer-type bg-danger">Sale</span> <span
 								class="offer-type bg-success">Rent</span>
-						</div> <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+						</div> <img src="images/1002_1.png" alt="Image" class="img-fluid">
 					</a>
 					<div class="property-body">
 						<a href="#" class="property-favorite"><span
@@ -19,7 +21,7 @@
 						<span class="property-location d-block mb-3"><span
 							class="property-icon icon-room"></span> 853 S Lucerne Blvd Unit
 							101 Los Angeles, CA 90005</span> <strong
-							class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+							class="property-price text-primary mb-3 d-block text-success">265,500원</strong>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Autem dolorem tenetur magni. Aspernatur odit rem repudiandae
 							cumque tenetur enim consequuntur esse.</p>
@@ -31,7 +33,6 @@
 							<li><span class="property-specs">SQ FT</span> <span
 								class="property-specs-number">5,500</span></li>
 						</ul>
-						<button style="float: right;">등록하기</button>
 					</div>
 				</div>
 			</div>
@@ -45,7 +46,7 @@
 						<div class="offer-type-wrap">
 							<span class="offer-type bg-danger">Sale</span> <span
 								class="offer-type bg-success">Rent</span>
-						</div> <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+						</div> <img src="images/1001_1.png" alt="Image" class="img-fluid">
 					</a>
 
 					<div class="  property-body">
@@ -57,7 +58,7 @@
 						<span class="property-location d-block mb-3"><span
 							class="property-icon icon-room"></span> 853 S Lucerne Blvd Unit
 							101 Los Angeles, CA 90005</span> <strong
-							class="property-price text-primary mb-3 d-block text-success">$2,265,500</strong>
+							class="property-price text-primary mb-3 d-block text-success">265,500원</strong>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Autem dolorem tenetur magni. Aspernatur odit rem repudiandae
 							cumque tenetur enim consequuntur esse.</p>

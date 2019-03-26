@@ -1,4 +1,4 @@
-package model.DO;
+package model.dataObject;
 
 public class ItemInterestDO {
 	private int item_no;
