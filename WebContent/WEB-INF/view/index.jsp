@@ -8,9 +8,6 @@
 
 <%@ include file="../include/header.jsp"%>
 
-<% response.setCharacterEncoding("UTF-8"); %>
-<% request.setCharacterEncoding("UTF-8"); %>
-
 </head>
 <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0"
 	class="">

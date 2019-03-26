@@ -1,4 +1,4 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div class="site-wrap">
 
 	<div class="site-mobile-menu">
@@ -33,11 +33,8 @@
 						</div>
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block">
-							<li class="active">
-							<a href="main_controller.jsp?command=list">Home</a>
-							</li>
-							<li><a href="main_controller.jsp?command=sell">Buy</a></li>
-							<li><a href="main_controller.jsp?command=rent">Rent</a></li>
+							<li><a href="main_controller.jsp?command=sell">구매</a></li>
+							<li><a href="main_controller.jsp?command=rent">대여</a></li>
 							<li class="has-children"><a href="main_controller.jsp?command=rent">카테고리</a>
 								<ul class="dropdown arrow-top">
 									<li><a href="#">Condo</a></li>
@@ -51,9 +48,9 @@
 										</ul></li>
 								</ul></li>
 								
-							<li><a href="main_controller.jsp?command=regist">Regist</a></li>
+							<li><a href="main_controller.jsp?command=regist">물품등록</a></li>
 							<li><a href="main_controller.jsp?command=mypage">My Page</a></li>
-							<li><a href="main_controller.jsp?command=logout">
+							<li><a href="main_controller.jsp?command=logout" style="padding: 0px;">
 									<img src="images/logout.png" style="height: 25px; ">
 								</a>
 							</li>

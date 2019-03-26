@@ -16,10 +16,10 @@
 		style="margin: 30px; text-align: -webkit-center;">
 		<div class="col-md-10 row">
 			<div class="col-md-3 "
-				style="height: 250px; background-color: green;">
+				style="height: 250px; background-color: green; padding: 20px;">
 				<div class="mypage-name">
 					<h1>OOO 님</h1>
-					<p>Login or register from here to access.</p>
+					<p>한글한글</p>
 				</div>
 			</div>
 			<div class="col-md-9" style="">
@@ -38,7 +38,7 @@
 					<div class="col-md-6 col-lg-4">
 						<a href="#" class="service text-center"> <span
 							class="icon flaticon-house"></span>
-							<h2 class="service-heading">Research Subburbs</h2>
+							<h2 class="service-heading">등록한 상품</h2>
 							<p></p>
 							<h2>1</h2>
 							<p></p>
@@ -47,7 +47,7 @@
 					<div class="col-md-6 col-lg-4">
 						<a href="#" class="service text-center"> <span
 							class="icon flaticon-sold"></span>
-							<h2 class="service-heading">Sold Houses</h2>
+							<h2 class="service-heading">찜한 상품</h2>
 							<p></p>
 							<h2>1</h2>
 							<p></p>
@@ -56,7 +56,7 @@
 					<div class="col-md-6 col-lg-4">
 						<a href="#" class="service text-center"> <span
 							class="icon flaticon-camera"></span>
-							<h2 class="service-heading">Security Priority</h2>
+							<h2 class="service-heading">대여중인 상품</h2>
 							<p></p>
 							<h2>1</h2>
 							<p></p>

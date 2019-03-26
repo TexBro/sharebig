@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="css/newstyle.css">
 
 
+<% response.setCharacterEncoding("UTF-8"); %>
+<% request.setCharacterEncoding("UTF-8"); %>
+
 
 <script src="js/jquery-3.3.1.min.js"></script>
 
