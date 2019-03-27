@@ -13,96 +13,82 @@ public class LoginDAO {
 	private Statement stmt;
 	private PreparedStatement pstmt;
 	private ResultSet rs;
-	
+
 	public LoginDAO() {
-		try{
+		try {
 			Context initContext = new InitialContext();
-	        this.ds = (DataSource)initContext.lookup("java:/comp/env/jdbc/oracle");
-		}
-		catch(Exception e) {
+			this.ds = (DataSource) initContext.lookup("java:/comp/env/jdbc/oracle");
+		} catch (Exception e) {
 			System.out.println(e);
 		}
 	}
-	
+
 	public void setAutoCommit(boolean commit) {
 		try {
 			this.conn = ds.getConnection();
 			this.conn.setAutoCommit(commit);
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			System.out.println(e);
-		}
-		finally {
+		} finally {
 			try {
 				this.conn.close();
-			}
-			catch(Exception e) {
+			} catch (Exception e) {
 				System.out.println(e);
 			}
 		}
 	}
-	
+
 	public void commit() {
 		try {
 			this.conn = ds.getConnection();
 			conn.commit();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			System.out.println(e);
-		}
-		finally {
+		} finally {
 			try {
 				this.conn.close();
-			}
-			catch(Exception e) {
+			} catch (Exception e) {
 				System.out.println(e);
 			}
 		}
 	}
-	
+
 	public void rollback() {
 		try {
 			this.conn = ds.getConnection();
 			conn.rollback();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			System.out.println(e);
-		}
-		finally {
+		} finally {
 			try {
 				this.conn.close();
-			}
-			catch(Exception e) {
+			} catch (Exception e) {
 				System.out.println(e);
 			}
 		}
 	}
 
 	public int login(LoginDO loginDO) {
-		
+
 		int count = 0;
-		
-		//String sql = "select user from dual";
-		//String sql ="select table_name from tabs";
+
 		String sql = "select * from member where id=? and passwd=?";
 		try {
-			
+
 			this.conn = ds.getConnection();
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, loginDO.getUserid());
 			pstmt.setString(2, loginDO.getPasswd());
-			
+
 			rs = pstmt.executeQuery();
-			
-			while(rs.next()) {
+
+			while (rs.next()) {
 				count = 1;
 			}
-			
-		} 
-		catch (Exception e) {
+
+		} catch (Exception e) {
 			e.printStackTrace();
-		} 
-		finally {
+		} finally {
 			try {
 				this.rs.close();
 				this.pstmt.close();
@@ -111,9 +97,45 @@ public class LoginDAO {
 				System.out.println(e);
 			}
 		}
-		
+
+		System.out.println(count);
+		return count;
+	}
+
+	public int checkMember(MemberNoDO memberNoDO) {
+
+		int count = 0;
+
+		String sql = "select * from member_no where member_name = ? and member_no = ? ";
+		try {
+
+			this.conn = ds.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, memberNoDO.getMember_name());
+			pstmt.setInt(2, memberNoDO.getMember_no());
+
+			System.out.println(memberNoDO.getMember_name());
+			System.out.println(memberNoDO.getMember_no());
+
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				count = 1;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				this.rs.close();
+				this.pstmt.close();
+				this.conn.close();
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+		}
+
 		System.out.println(count);
 		return count;
 	}
 }
-

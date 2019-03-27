@@ -1,5 +1,7 @@
 package model.dataObject;
 
+import java.sql.Date;
+
 public class ItemDO {
 	private int item_no;
 	private int cata_no;
@@ -13,22 +15,22 @@ public class ItemDO {
 	private String item_file;
 
 	private String cata_name;
-	private String sale_date;
-	private String start_date;
-	private String end_date;
-	private String share_final_date;
+	private Date sale_date;
+	private Date start_date;
+	private Date end_date;
+	private Date share_final_date;
 	
-	public String getShare_final_date() {
+	public Date getShare_final_date() {
 		return share_final_date;
 	}
-	public void setShare_final_date(String share_final_date) {
+	public void setShare_final_date(Date share_final_date) {
 		this.share_final_date = share_final_date;
 	}
 
-	public String getSale_date() {
+	public Date getSale_date() {
 		return sale_date;
 	}
-	public void setSale_date(String sale_date) {
+	public void setSale_date(Date sale_date) {
 		this.sale_date = sale_date;
 	}
 
@@ -38,16 +40,16 @@ public class ItemDO {
 	public void setCata_name(String cata_name) {
 		this.cata_name = cata_name;
 	}
-	public String getStart_date() {
+	public Date getStart_date() {
 		return start_date;
 	}
-	public void setStart_date(String start_date) {
+	public void setStart_date(Date start_date) {
 		this.start_date = start_date;
 	}
-	public String getEnd_date() {
+	public Date getEnd_date() {
 		return end_date;
 	}
-	public void setEnd_date(String end_date) {
+	public void setEnd_date(Date end_date) {
 		this.end_date = end_date;
 	}
 	

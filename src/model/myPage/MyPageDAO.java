@@ -121,7 +121,7 @@ public class MyPageDAO {
 			ArrayList<ItemDO> saleItemList= new ArrayList<ItemDO>();
 			//ItemDO itemDo= new ItemDO();
 			try {
-				String sql = "select category.cata_name, item.register_type, item.item_type,item.item_name,item.price, item.item_info,item.item_file,sale_info.sale_date"
+				String sql = "select category.cata_name, item.register_type, item.item_type,item.item_name,item.price, item.item_info,item.item_file,sale_info.sale_date,item.item_no"
 							+" from item, item_sale,sale_info,category"
 							+" where item.cata_no=category.cata_no and"
 							+ 	" item.item_no = item_sale.item_no and"
@@ -145,8 +145,8 @@ public class MyPageDAO {
 					itemDO.setPrice(rs.getInt(5));
 					itemDO.setItem_info(rs.getString(6));
 					itemDO.setItem_file(rs.getString(7));
-					itemDO.setSale_date(rs.getString(8));
-					
+					itemDO.setSale_date(rs.getDate(8));
+					itemDO.setItem_no(rs.getInt(9));
 					saleItemList.add(itemDO);
 				}
 				
@@ -173,13 +173,12 @@ public class MyPageDAO {
 		ArrayList<ItemDO> shareItemList = new ArrayList<ItemDO>();
 		// ItemDO itemDo= new ItemDO();
 		try {
-			String sql = "select category.cata_name, item.register_type, item.item_type,item.item_name,item.price, item.item_info,item.item_file,item_share.share_final_date, share_info.share_start_date, share_info.share_end_date"
-					+ " from item, item_share,share_info,category" 
-					+ " where item.cata_no=category.cata_no and"
-					+ " item.item_no = item_share.item_no and"
-					+ "    item_share.item_share_no=share_info.item_share_no and "
-					+ "    item.member_no=(select member_no from member where id=?)";
-
+			String sql= "select category.cata_name, item.register_type, item.item_type,item.item_name,item.price, item.item_info,item.item_file,item_share.share_final_date, item.item_no"
+					+" from item,item_share,category"
+			        +" where item.member_no=(select member_no from member where id=?)"
+					+"        and item.item_no= item_share.item_no"
+			        +"        and item.cata_no= category.cata_no";
+			
 			this.conn = ds.getConnection();
 			pstmt = conn.prepareStatement(sql);
 
@@ -196,9 +195,9 @@ public class MyPageDAO {
 				itemDO.setPrice(rs.getInt(5));
 				itemDO.setItem_info(rs.getString(6));
 				itemDO.setItem_file(rs.getString(7));
-				itemDO.setShare_final_date(rs.getString(8));
-				itemDO.setStart_date(rs.getString(9));
-				itemDO.setEnd_date(rs.getString(10));
+				itemDO.setShare_final_date(rs.getDate(8));
+				itemDO.setItem_no(rs.getInt(9));
+				
 				shareItemList.add(itemDO);
 			}
 
@@ -221,12 +220,18 @@ public class MyPageDAO {
 		ArrayList<ItemDO> intItemList = new ArrayList<ItemDO>();
 		// ItemDO itemDo= new ItemDO();
 		try {
-			String sql = "select category.cata_name, item.register_type, item.item_type,item.item_name,item.price, item.item_info,item.item_file"
+			String sql ="select category.cata_name, item.register_type, item.item_type,item.item_name,item.price, item.item_info,item.item_file,item.item_no" 
+						 +" from item,category"
+					     +" where item.item_no in (select item_no from interest_info where interest_info.member_no= "
+					     + "									(select member_no from member where id=?)) "
+						 + " and item.cata_no = category.cata_no ";
+			
+			/*String sql = "select category.cata_name, item.register_type, item.item_type,item.item_name,item.price, item.item_info,item.item_file"
 					+ " from item, item_share,interest_info,category" 
 					+ " where item.cata_no=category.cata_no and"
 					+ " item.item_no = interest_info.item_no and"
 					+ " item.member_no=(select member_no from member where id=?)";
-
+			 		*/
 			this.conn = ds.getConnection();
 			pstmt = conn.prepareStatement(sql);
 
@@ -243,6 +248,7 @@ public class MyPageDAO {
 				itemDO.setPrice(rs.getInt(5));
 				itemDO.setItem_info(rs.getString(6));
 				itemDO.setItem_file(rs.getString(7));
+				itemDO.setItem_no(rs.getInt(8));
 				
 				intItemList.add(itemDO);
 			}

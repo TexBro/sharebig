@@ -13,56 +13,57 @@
 
 
 <script>
-	/*
-	 폼에서 사용자 입력이 유효한 경우에만 로그인 요청이 나갈수 있도록 제한한다.
-	 */
-	var messageDiv = null;
+/*
+폼에서 사용자 입력이 유효한 경우에만 로그인 요청이 나갈수 있도록 제한한다.
+*/
+var messageDiv = null;
 
-	function submitHandler(event) {
-		var id = document.querySelector('#id');
-		var passwd = document.querySelector('#passwd');
-		var message = '';
-		var result = false;
+function submitHandler(event) {
+var id = document.querySelector('#id');
+var passwd = document.querySelector('#passwd');
+var message = '';
+var result = false;
 
-		
-		if (id.value && passwd.value) {
 
-			if (id.value.length >= 2 && passwd.value.length >= 2) {
-				result = true;
-			 } else {
-			 message = '아이디와 패스워드 2자 이상 입력하여야 합니다.';
-			 }
-		} else {
-			message = '아이디와 패스워드에는 반드시 값이 존재해야 합니다.';
-		}
+if (id.value && passwd.value) {
 
-		if (!result) {
-			event.preventDefault();
-			messageDiv.innerHTML = message;
-		}
-	}
+if (id.value.length >= 2 && passwd.value.length >= 2) {
+result = true;
+} else {
+message = '아이디와 패스워드 2자 이상 입력하여야 합니다.';
+}
+} else {
+message = '아이디와 패스워드에는 반드시 값이 존재해야 합니다.';
+}
 
-	function init() {
-		var loginForm = document.querySelector('#loginForm');
-		loginForm.addEventListener('submit', submitHandler);
-		messageDiv = document.querySelector('#message');
-		var param;
-		var url = new URL(window.location.href);
-		
-		try{
-		param=url.searchParams.get("command");
-		console.log(param);
-		}
-		catch (e) {
-			// TODO: handle exception
-		}
-		
-		if(param=="wrong"){
-			messageDiv.innerHTML += '아이디 또는 비밀번호를 다시 확인하세요.<br>';
-		}
-	}
+if (!result) {
+event.preventDefault();
+messageDiv.innerHTML = message;
+}
+}
 
-	window.addEventListener('load', init);
+function init() {
+var loginForm = document.querySelector('#loginForm');
+loginForm.addEventListener('submit', submitHandler);
+messageDiv = document.querySelector('#message');
+var param;
+var url = new URL(window.location.href);
+
+try{
+param=url.searchParams.get("command");
+console.log(param);
+}
+catch (e) {
+// TODO: handle exception
+}
+
+if(param=="wrong"){
+messageDiv.innerHTML += '아이디 또는 비밀번호를 다시 확인하세요.
+';
+}
+}
+
+window.addEventListener('load', init);
 </script>
 
 <style>
@@ -102,6 +103,7 @@
 						onclick="location.href='login_controller.jsp?command=signup'">Register</button>
 
 				</form>
+
 
 
 				<div id="message"></div>

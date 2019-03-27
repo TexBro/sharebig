@@ -8,7 +8,14 @@ public class ItemCommentDO {
 	private Date comment_date;
 	private String comment_info;
 	private int member_no;
+	private String member_name;
 	
+	public String getMember_name() {
+		return member_name;
+	}
+	public void setMember_name(String member_name) {
+		this.member_name = member_name;
+	}
 	public int getComment_no() {
 		return comment_no;
 	}
