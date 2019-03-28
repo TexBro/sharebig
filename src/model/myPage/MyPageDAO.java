@@ -145,7 +145,7 @@ public class MyPageDAO {
 					itemDO.setPrice(rs.getInt(5));
 					itemDO.setItem_info(rs.getString(6));
 					itemDO.setItem_file(rs.getString(7));
-					itemDO.setSale_date(rs.getDate(8));
+					itemDO.setSale_date(rs.getString(8));
 					itemDO.setItem_no(rs.getInt(9));
 					saleItemList.add(itemDO);
 				}
@@ -195,7 +195,7 @@ public class MyPageDAO {
 				itemDO.setPrice(rs.getInt(5));
 				itemDO.setItem_info(rs.getString(6));
 				itemDO.setItem_file(rs.getString(7));
-				itemDO.setShare_final_date(rs.getDate(8));
+				itemDO.setShare_final_date(rs.getString(8));
 				itemDO.setItem_no(rs.getInt(9));
 				
 				shareItemList.add(itemDO);

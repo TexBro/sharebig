@@ -49,7 +49,7 @@
 					<div class="col-md-6 col-lg-4">
 						<a href="#" class="service text-center"> <span
 							class="icon flaticon-house"></span>
-							<h2 class="service-heading">등록한 상품</h2>
+							<h2 class="service-heading">판매 등록 상품</h2>
 							<p></p>
 							<h2><%= salelist.size() %></h2>
 							<p></p>
@@ -58,7 +58,7 @@
 					<div class="col-md-6 col-lg-4">
 						<a href="#" class="service text-center"> <span
 							class="icon flaticon-sold"></span>
-							<h2 class="service-heading">찜한 상품</h2>
+							<h2 class="service-heading">대여 등록 상품</h2>
 							<p></p>
 							<h2><%= sharelist.size() %></h2>
 							<p></p>
@@ -67,7 +67,7 @@
 					<div class="col-md-6 col-lg-4">
 						<a href="#" class="service text-center"> <span
 							class="icon flaticon-camera"></span>
-							<h2 class="service-heading">대여중인 상품</h2>
+							<h2 class="service-heading">찜한 상품</h2>
 							<p></p>
 							<h2><%= interestlist.size() %></h2>
 							<p></p>
@@ -101,7 +101,7 @@
 							<img src='<%="images/"+itemDO.getItem_file()%>' alt="Image" class="img-fluid">
 						</a>
 						<div class="property-body">
-							<a href="#" class="property-favorite"> 
+							<a href="main_controller.jsp?command=favorite&itemid=<%=itemDO.getItem_no()%>" class="property-favorite"> 
 							<span class="icon-heart-o"></span>
 							</a>
 							<h2 class="property-title">
@@ -121,7 +121,7 @@
 								</li>
 								<li>
 								<span class="property-specs">판매일</span>
-								<span class="property-specs-number"><%= itemDO.getSale_date().toString() %></span>
+								<span class="property-specs-number"><%=itemDO.getSale_date()%></span>
 								</li>
 								<li>
 								<span class="property-specs"></span> 
@@ -177,7 +177,7 @@
 									</li>
 									<li>
 									<span class="property-specs">대여 종료일</span>
-									<span class="property-specs-number"><%=itemDO.getShare_final_date().toString() %></span>
+									<span class="property-specs-number"><%=itemDO.getShare_final_date() %></span>
 									</li>
 									<li>
 									<span class="property-specs"></span> 
@@ -212,11 +212,11 @@
 							<img src='<%="images/"+itemDO.getItem_file()%>' alt="Image" class="img-fluid">
 						</a>
 						<div class="property-body">
-							<a href="#" class="property-favorite active"> 
+							<a href="main_controller.jsp?command=favorite&itemid=<%=itemDO.getItem_no()%>" class="property-favorite active"> 
 							<span class="icon-heart-o"></span>
 							</a>
 							<h2 class="property-title">
-								<a href=""main_controller.jsp?command=detail&itemid=<%=itemDO.getItem_no()%>""><%= itemDO.getItem_name()%></a>
+								<a href="main_controller.jsp?command=detail&itemid=<%=itemDO.getItem_no()%>"><%= itemDO.getItem_name()%></a>
 							</h2>
 							<span class="property-location d-block mb-3"> 
 								<span class="property-icon icon-room">
@@ -229,7 +229,7 @@
 								<li>
 								<span class="property-specs">카테고리</span> 
 								<span class="property-specs-number"><%=itemDO.getCata_name()%></span>
-								</li>
+								</li>	
 								<li>
 								<span class="property-specs"></span>
 								<span class="property-specs-number"></span>

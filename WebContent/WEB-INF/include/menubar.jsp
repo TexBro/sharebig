@@ -33,8 +33,8 @@
 						</div>
 
 						<ul class="site-menu js-clone-nav d-none d-lg-block">
-							<li><a href="main_controller.jsp?command=sell">구매</a></li>
-							<li><a href="main_controller.jsp?command=rent">대여</a></li>
+							<li><a href="main_controller.jsp?option=sale">구매</a></li>
+							<li><a href="main_controller.jsp?option=rent">대여</a></li>
 							<li class="has-children"><a href="main_controller.jsp?command=rent">카테고리</a>
 								<ul class="dropdown arrow-top">
 									<li><a href="#">Condo</a></li>

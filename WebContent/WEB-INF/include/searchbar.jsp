@@ -83,8 +83,8 @@
 					<div class="ml-auto d-flex align-items-center">
 						<div>
 							<a href="main_controller.jsp" class="view-list px-3 border-right active">All</a> <a
-								href="main_controller.jsp?command=rent" class="view-list px-3 border-right">Rent</a> <a
-								href="main_controller.jsp?command=buy" class="view-list px-3">Sale</a>
+								href="main_controller.jsp?option=rent" class="view-list px-3 border-right">Rent</a> <a
+								href="main_controller.jsp?option=sale" class="view-list px-3">Sale</a>
 						</div>
 
 

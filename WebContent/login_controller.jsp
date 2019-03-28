@@ -7,7 +7,6 @@ request.setCharacterEncoding("UTF-8");
 }
 
 String command = request.getParameter("command");
-
 String method = request.getMethod();
 log(command);
 log(method);
@@ -55,7 +54,8 @@ if(!loginSO.checkLogin(loginDO)) {
 response.sendRedirect("login_controller.jsp?command=wrong");
 } else { 
 session.setAttribute("id", loginDO.getUserid());
-pageContext.forward("/main_controller.jsp");
+//pageContext.forward("/main_controller.jsp");
+response.sendRedirect("main_controller.jsp");
 }
 
 } 

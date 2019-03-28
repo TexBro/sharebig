@@ -6,7 +6,8 @@ public class ItemDO {
 	private int item_no;
 	private int cata_no;
 	private int member_no;
-	
+	private String id;
+
 	private int register_type;
 	private int item_type;
 	private String item_name;
@@ -15,22 +16,28 @@ public class ItemDO {
 	private String item_file;
 
 	private String cata_name;
-	private Date sale_date;
-	private Date start_date;
-	private Date end_date;
-	private Date share_final_date;
+	private String sale_date;
+	private String start_date;
+	private String end_date;
+	private String share_final_date;
 	
-	public Date getShare_final_date() {
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getShare_final_date() {
 		return share_final_date;
 	}
-	public void setShare_final_date(Date share_final_date) {
+	public void setShare_final_date(String share_final_date) {
 		this.share_final_date = share_final_date;
 	}
 
-	public Date getSale_date() {
-		return sale_date;
+	public String getSale_date() {
+		return this.sale_date;
 	}
-	public void setSale_date(Date sale_date) {
+	public void setSale_date(String sale_date) {
 		this.sale_date = sale_date;
 	}
 
@@ -40,16 +47,16 @@ public class ItemDO {
 	public void setCata_name(String cata_name) {
 		this.cata_name = cata_name;
 	}
-	public Date getStart_date() {
+	public String getStart_date() {
 		return start_date;
 	}
-	public void setStart_date(Date start_date) {
+	public void setStart_date(String start_date) {
 		this.start_date = start_date;
 	}
-	public Date getEnd_date() {
+	public String getEnd_date() {
 		return end_date;
 	}
-	public void setEnd_date(Date end_date) {
+	public void setEnd_date(String end_date) {
 		this.end_date = end_date;
 	}
 	
@@ -107,6 +114,8 @@ public class ItemDO {
 	public void setMember_no(int member_no) {
 		this.member_no = member_no;
 	}
-	
+	//public Date getShare_final_date() {
+
+
 
 }

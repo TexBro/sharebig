@@ -11,8 +11,8 @@
 	<%@ include file="../include/menubar.jsp"%>
 
 	<%@ include file="../include/searchbar.jsp"%>
-
-	<%@ include file="../include/listview.jsp"%>
+	
+	<%-- <%@ include file="../include/listview.jsp"%>--%>
 
 	<%@ include file="../include/footer.jsp"%>
 
